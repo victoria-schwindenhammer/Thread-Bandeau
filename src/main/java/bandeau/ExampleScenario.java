@@ -3,15 +3,15 @@ package bandeau;
 public class ExampleScenario {
 
 	/**
-	 * "Programme principal" : point d'entr�e d'ex�cution
+	 * "Programme principal" : point d'entrée d'exécution
 	 *
 	 * @param args les "arguments de ligne de commande", transmis au lancement du programme
 	 */
 	public static void main(String[] args) {
 		String message;
-		if (args.length > 0) // J'ai au moins un param�tre
+		if (args.length > 0) // J'ai au moins un paramètre
 		{
-			message = args[0]; // le premier param�tre
+			message = args[0]; // le premier paramètre
 		} else {
 			message = "Je m'affiche caractere par caractere";
 		}
@@ -29,7 +29,8 @@ public class ExampleScenario {
 		s.addEffect(new TeleType(message, 100), 1);
 		s.addEffect(new Blink("Je clignote 10x", 100), 10);
 		s.addEffect(new Zoom("Je zoome", 50), 1);
-		//s.addEffect(new Rainbow("Comme c'est joli !", 30), 1);
+		s.addEffect(new FontEnumerator(10), 1);
+		s.addEffect(new Rainbow("Comme c'est joli !", 30), 1);
 		s.addEffect(new Rotate("Je fais 2 tours"), 2);
 		// On cree le bandeau
 		Bandeau b = new Bandeau();
