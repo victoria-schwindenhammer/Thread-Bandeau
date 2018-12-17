@@ -13,7 +13,7 @@ public class ExampleScenario {
 		{
 			message = args[0]; // le premier paramètre
 		} else {
-			message = "Je m'affiche caractere par caractere";
+			message = "Démonstration du bandeau";
 		}
 
 		ExampleScenario instance = new ExampleScenario();
@@ -26,15 +26,17 @@ public class ExampleScenario {
 		// On lui ajoute des effets
 		//s.addEffect(new FontEnumerator(10), 1);
 		s.addEffect(new RandomEffect("Le jeu du pendu", 700), 1);
-		s.addEffect(new TeleType(message, 100), 1);
+		s.addEffect(new TeleType("Je m'affiche caractere par caractere", 100), 1);
 		s.addEffect(new Blink("Je clignote 10x", 100), 10);
 		s.addEffect(new Zoom("Je zoome", 50), 1);
 		s.addEffect(new FontEnumerator(10), 1);
 		s.addEffect(new Rainbow("Comme c'est joli !", 30), 1);
-		s.addEffect(new Rotate("Je fais 2 tours"), 2);
+		s.addEffect(new Rotate("2 tours à droite", 180, 4000, true), 2);
+		s.addEffect(new Rotate("2 tours à gauche", 180, 4000, false), 2);
 		// On cree le bandeau
 		Bandeau b = new Bandeau();
-		b.sleep(5000);
+		b.setMessage(message);
+		b.sleep(2000);
 		// On joue le scenario sur le bandeau
 		s.playOn(b);
 	}
