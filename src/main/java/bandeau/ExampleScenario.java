@@ -39,6 +39,7 @@ public class ExampleScenario {
 		b.sleep(2000);
 		// On joue le scenario sur le bandeau
 		s.playOn(b);
+                b.close();
 	}
 
 }
