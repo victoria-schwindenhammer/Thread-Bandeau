@@ -12,6 +12,7 @@ public class Blink extends Effect {
         myDelay = delay;
     }
 
+    @Override
     public void playOn(Bandeau bandeau) {
         super.init(bandeau);
         String message = bandeau.getMessage();
@@ -20,5 +21,5 @@ public class Blink extends Effect {
         bandeau.setMessage(message);
         bandeau.sleep(myDelay);
     }
-        
+
 }
