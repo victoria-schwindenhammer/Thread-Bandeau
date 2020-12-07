@@ -1,7 +1,7 @@
 package bandeau;
 
 /**
- * Un effet a pour responsabilite de savoir se jouer dans un bandeau. Optionnellement, un effet change le message
+ * Un effet a pour responsabilité de savoir se jouer dans un bandeau. Optionnellement, un effet change le message
  * affiche avant de se jouer.
  */
 public abstract class Effect {

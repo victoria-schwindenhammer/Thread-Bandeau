@@ -5,12 +5,12 @@ import java.awt.Font;
 import java.util.Random;
 
 /**
- * L'effet FontEnumerator tire au sort parmi les polices de caractère disponibles et affiche dans le bandeau le nomn de
+ * L'effet FontEnumerator tire au sort parmi les polices de caractère disponibles et affiche dans le bandeau le nom de
  * la police, affiche dans la police de caractère elle même
  */
 public class FontEnumerator extends Effect {
 
-    private final String fonts[];
+    private final String[] fonts;
     private final int maxFonts;
     private final Random generator;
 

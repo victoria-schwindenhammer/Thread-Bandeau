@@ -5,9 +5,9 @@ package bandeau;
  */
 public class Rotate extends Effect {
 
-    private int dureeDunTour;
-    private int nombreDePas;
-    private boolean clockwise;
+    private final int dureeDunTour;
+    private final int nombreDePas;
+    private final boolean clockwise;
 
     /**
      * @param message le message, si null le message du bandeau est conservé
@@ -26,11 +26,11 @@ public class Rotate extends Effect {
     public void playOn(Bandeau b) {
         super.init(b);
         int delay = dureeDunTour / nombreDePas;
-        Double old = b.getRotation();
+        double old = b.getRotation();
         int increment = clockwise ? 1 : -1;
         for (int pas = 0; Math.abs(pas) != nombreDePas; pas += increment) {
-            double theta = (360 * pas) / nombreDePas;
-            b.setRotation(Math.toRadians(theta));
+            double theta = (Math.PI * 2 * pas) / nombreDePas;
+            b.setRotation(theta);
             b.sleep(delay);
         }
         b.setRotation(old);

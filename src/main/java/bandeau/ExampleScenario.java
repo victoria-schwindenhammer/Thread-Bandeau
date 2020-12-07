@@ -26,7 +26,7 @@ public class ExampleScenario {
         // On lui ajoute des effets
         //s.addEffect(new FontEnumerator(10), 1);
         s.addEffect(new RandomEffect("Le jeu du pendu", 700), 1);
-        s.addEffect(new TeleType("Je m'affiche caractere par caractere", 100), 1);
+        s.addEffect(new TeleType("Je m'affiche caractère par caractère", 100), 1);
         s.addEffect(new Blink("Je clignote 10x", 100), 10);
         s.addEffect(new Zoom("Je zoome", 50), 1);
         s.addEffect(new FontEnumerator(10), 1);

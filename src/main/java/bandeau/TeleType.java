@@ -1,7 +1,7 @@
 package bandeau;
 
 /**
- * Un effet qui affiche les caracteres du message un par un
+ * Un effet qui affiche les caractères du message un par un
  */
 public class TeleType extends Effect {
 

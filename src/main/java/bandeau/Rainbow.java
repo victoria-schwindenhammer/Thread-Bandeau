@@ -1,11 +1,10 @@
 package bandeau;
 
+import java.awt.Color;
+import java.util.*;
 /**
  * Un effet qui affiche le texte dans toutes les couleurs de l'arc en ciel
  */
-import java.awt.Color;
-import java.util.*;
-
 public class Rainbow extends Effect {
 
     private final java.util.List<Color> myColors;

@@ -1,7 +1,7 @@
 package bandeau;
 
 /**
- * Un effet qui clignote le texte une fois, avec un delai à specifier
+ * Un effet qui clignote le texte une fois, avec un délai à specifier
  */
 public class Blink extends Effect {
 

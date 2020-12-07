@@ -35,7 +35,8 @@
 				    <goal>resolve</goal>
 				</goals>
 				<configuration>
-				    <classifier>javadoc</classifier>
+					<classifier>javadoc</classifier>
+					<classifier>sources</classifier>
 				</configuration>
 			    </execution>
 			</executions>
