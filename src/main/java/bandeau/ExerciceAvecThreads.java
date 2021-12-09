@@ -10,6 +10,8 @@ public class ExerciceAvecThreads {
     public void exemple() {
 
         Scenario s = makeScenario();
+        Scenario s2 = new Scenario();
+        s2.addEffect(new Rotate("2 tours à droite", 180, 4000, true), 2);
         // On cree les bandeaux
         Bandeau b1 = new Bandeau();
         Bandeau b2 = new Bandeau();
@@ -20,7 +22,7 @@ public class ExerciceAvecThreads {
         s.playOn(b2);
         s.playOn(b3);
         // On rejoue le scénario sur b1 quand le premier jeu est fini
-        s.playOn(b1);
+        s2.playOn(b1);
     }
 
     private Scenario makeScenario() {
